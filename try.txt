@@ -1,0 +1,439 @@
+body,h2,p{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* header */
+.header{
+ background-color: rgba(245, 255, 247, 1);
+ border: 1px solid rgba(225, 241, 186, 1);
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ min-height: 48px;
+ padding-inline: 96px;
+}
+.header .enquiry,.header .contact, .header .app{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.header .enquiry .SNSLogo {
+    font-size: 18px; 
+    cursor: pointer;
+}
+.header .contact .phoneNumber , .email {
+ display: flex;
+ align-items: center;
+ gap:10px;
+}
+.header .contact .phoneNumber span, .email span {
+ font-size: 16px;
+ color: rgba(44, 38, 38, 1);
+}
+.header .contact .phoneNumber i {
+ font-size: 20px;
+ color: transparent;
+-webkit-text-stroke: 2px rgba(44, 38, 38, 1);
+}
+.header .contact .email i{
+    font-size: 20px;
+    color: rgba(44, 38, 38, 1);
+}
+.header .app span{
+    color:rgba(124, 121, 121, 1);
+    font-size: 16px;
+}
+.header .app .playStore,
+.header .app .appleStore {
+    display: flex;               
+    align-items: center;         
+    justify-content: center;     
+    background-color: rgba(58, 181, 74, 1);
+    color: white;
+    border-radius: 50%;
+    height: 30px;                
+    width: 30px;                 
+    font-size: 16px;
+    cursor: pointer;
+}
+/* NavBar */
+.navItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 96px;
+    padding-block: 30px;
+}
+.navItems .navLinks a{
+    text-decoration: none;
+    outline: none;
+    color: rgba(124, 121, 121, 1);
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 10px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+}
+.navItems .buttonUser{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+.navItems .buttonUser .user{
+    font-size: 20px;
+    border: 1px solid rgba(124, 121, 121, 1);
+    border-radius: 50%;
+    padding:8px;
+}
+.navItems .buttonUser .user i{
+    color:rgba(124, 121, 121, 1) ;
+}
+/*Hero Section*/
+#heroSection{
+    padding-inline: 96px;
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    position: relative;
+}
+#heroSection .heroSectionDetails {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#heroSection .heroSectionDetails  .heroDetails{
+    display:flex;
+    align-items: center;
+    gap: 120px;
+    
+}
+#heroSection .heroSectionDetails  .heroDetails .titleDetail{
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#heroSection .heroSectionDetails  .heroDetails .titleDetail .subText,#heroSection .titleDetail .subTitle{ 
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba(152, 152, 153, 1);
+}
+#heroSection .heroSectionDetails  .heroDetails .titleDetail .mainTitle{
+    color:rgba(89, 85, 85, 1);
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: 700;
+}
+#heroSection .titleDetail .subTitle{
+    line-height: 25px;
+    font-size: 18px;
+    color: rgba(152, 152, 153, 1);
+}
+#heroSection .heroDetails .titleDetail .mainTitle .highlightTitle{
+    color:rgba(58, 181, 74, 1);
+}
+#heroSection .heroDetails .titleDetail .titleButton{
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+#heroSection .heroDetails .enrollDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+#heroSection .heroDetails .enrollDetails .enrollNumber, #heroSection .studentDetails .studentNumber{
+    color:rgba(58, 181, 74, 1);
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+}
+#heroSection .heroDetails .enrollDetails .enrollStudents, #heroSection .studentDetails .totalStudent{
+    color:rgba(97, 97, 97, 0.79);
+    font-size: 16px;
+}
+
+#heroSection .heroDetails .enrollDetails .enrollAvatar{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+#heroSection .heroDetails .enrollDetails .enrollAvatar .avatarGroup{
+    
+}
+#heroSection .heroDetails .enrollDetails .enrollAvatar .avatarGroup .avatar img {
+    border-radius: 50%;
+    height: 40px;
+    width:40px;
+    object-fit: cover;
+    margin-left: -10px;
+}
+.enrollAvatar .avatarGroup .avatar:first-child {
+    margin-left: 0;
+    z-index: 5;
+}
+.enrollAvatar .avatarGroup .avatar:nth-child(2) {
+    z-index: 4;
+}
+.enrollAvatar .avatarGroup .avatar:nth-child(3) {
+    z-index: 3;
+}
+.enrollAvatar .avatarGroup .avatar:nth-child(4) {
+    z-index: 2;
+}
+.enrollAvatar .avatarGroup .avatar:nth-child(5) {
+    z-index: 1;
+}
+.enrollAvatar .avatarGroup .avatarNumber {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(69, 68, 68, 1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: -10px;
+}
+#heroSection .heroStudent{
+    display: flex;
+    align-items: start;
+}
+#heroSection .heroStudent .studentDetails{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+#heroSection .heroStudent .studentDetails .studentImg{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(227, 246, 229, 1);
+    border-radius: 50%;
+    padding:10px;
+}
+ .heroImg {
+    width: 456px;
+    height: 568px;
+    position: absolute;
+    top:50px;
+    right: 200px;
+  }
+
+
+
+
+  <!-- Top Bar -->
+    <nav class="topbar">
+        <div class="top-enquiry">
+            <button class="btn-primary--small btn-primary">Enquiry Now</button>
+            <i class="fa-brands fa-facebook enquiry-icon"></i>
+            <i class="fa-brands fa-telegram enquiryIcon"></i>
+            <i class="fa-brands fa-twitter enquiryIcon"></i>
+            <i class="fa-brands fa-whatsapp enquiryIcon"></i>
+        </div>
+
+        <div class="top-contact">
+            <div class="info">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Us: 9780023457</span>
+            </div>
+            <div class="info">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Mail: elearning@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="top-app">
+            <span>Download Our App</span>
+            <i class="fa-brands fa-google-play app-icon"></i>
+            <i class="fa-brands fa-apple app-icon"></i>
+        </div>
+    </nav>
+
+    <!-- Main Navbar -->
+    <nav class="navbar">
+        <img src="/images/site-logo.png" class="logo" />
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Free Material</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Notice</a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="btn-border btn-primary-border">Free Trial</button>
+            <button class="btn-primary--large btn-primary">Take Exam</button>
+            <div class="user-icon">
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="tag">Online Test Portal</span>
+
+                <h1 class="title">Achieve Your Goal
+                    <span class="highlight">With Elearning</span>
+                </h1>
+
+                <p class="subtitle">Unlock your potential with our user-friendly online test portal</p>
+
+                <div class="hero-buttons">
+                    <button class="btn-secondary-border btn-border">Take Exam</button>
+                    <button class="btn-secondary">Buy Courses</button>
+                </div>
+
+                <div class="enroll">
+                    <div class="num">36k+</div>
+                    <div class="label">Enrolled Students</div>
+
+                    <div class="avatar-group">
+                        <img src="/images/alexEnrolled.png" class="avatar" />
+                        <img src="/images/chrisEnrolled.png" class="avatar" />
+                        <img src="/images/juricaEnolled.png" class="avatar" />
+                        <img src="/images/chrisEnrolled.png" class="avatar" />
+                        <span class="more">49k</span>
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/indian-girls-sitting-with-laptop.png" class="hero-img" />
+
+            <div class="small-card">
+                <img src="/images/student.png" class="student-img" />
+                <div>
+                    <div class="num">24k</div>
+                    <div class="label">Total Students</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Header-->
+    <nav class="header">
+        <div class="enquiry">
+            <button class="btn-primary btn-primary--small">Enquiry Now</button>
+            <i class="fa-brands fa-facebook SNSLogo"></i>
+            <i class="fa-brands fa-telegram SNSLogo"></i>
+            <i class="fa-brands fa-twitter SNSLogo"></i>
+            <i class="fa-brands fa-whatsapp SNSLogo"></i>
+        </div>
+        <div class="contact">
+            <div class="phoneNumber">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Us At : 9780023457</span>
+            </div>
+            <div class="email">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Mail Us At : elearning@gmail.com</span>
+            </div>
+        </div>
+        <div class="app">
+            <span>Download Our App</span>
+            <i class="fa-brands fa-google-play playStore"></i>
+            <i class="fa-brands fa-apple appleStore"></i>
+        </div>
+    </nav>
+    <!--Gloabal NavBar-->
+    <nav class="navItems">
+        <div>
+            <img src="/images/site-logo-1615368348-removebg-preview 2.png" alt="site Logo" class="siteLogo" />
+        </div>
+        <div class="navLinks">
+            <a href="">Home
+            </a>
+            <a href="">Courses
+            </a>
+            <a href="">Free Material
+            </a>
+            <a href="">About Us
+            </a>
+            <a href="">Contact Us
+            </a>
+            <a href="">Notice
+            </a>
+        </div>
+        <div class="buttonUser">
+            <div class="navButton">
+                <button class="btn-border btn-primary-border">Free Trial</button>
+                <button class="btn-primary btn-primary--large">Take Exam</button>
+            </div>
+            <div class="user">
+                <!-- <i class="fa-solid fa-circle-user"></i> -->
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <section id="heroSection">
+        <div class="heroSectionDetails">
+            <div class="heroDetails">
+                <div class="titleDetail">
+                    <span class="subText">Online Test Portal</span>
+                    <p class="mainTitle">Achieve Your Goal
+                        <span class="highlightTitle">With Elearning</span>
+                    </p>
+                    <p class="subTitle">Unlock your potential with our user-friendly online test portal</p>
+                    <div class="titleButton">
+                        <button class="btn-border btn-secondary-border">Take Exam</button>
+                        <button class="btn-secondary">Buy Courses</button>
+                    </div>
+                </div>
+                <div class="enrollDetails">
+                    <div class="enrollNumber">36k+</div>
+                    <div class="enrollStudents">Enrolled Students</div>
+                    <div class="enrollAvatar">
+                        <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.5032 0.5L13.7886 3.05882C2.81956 9.2 0.362942 23.2451 0.505769 29.5C4.61918 16.5353 14.2171 11.3039 18.5019 10.3088L20.2158 12.8676L27.5 0.5H12.5032Z"
+                                fill="#C4BEBE" stroke="#F5F5F5" />
+                        </svg>
+                        <div class="avatarGroup">
+                            <div class="avatar">
+                                <img src="/images/alex-suprun-ZHvM3XIOHoE-unsplash 1.png" alt="User 1">
+                            </div>
+                            <div class="avatar">
+                                <img src="/images/christopher-campbell-rDEOVtE7vOs-unsplash (2) 1.png" alt="User 2">
+                            </div>
+                            <div class="avatar">
+                                <img src="images/jurica-koletic-7YVZYZeITc8-unsplash (1) 1.png" alt="User 3">
+                            </div>
+                            <div class="avatar">
+                                <img src="images/courtney-cook-TSZo17r3m0s-unsplash (1) 1.png" alt="User 4">
+                            </div>
+                            <div>
+                                <span class="avatarNumber">49k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="images/indian-girls-sitting-with-laptop-isolated-white-removebg-preview 1.png"
+                    alt="Girl with Laptop" class="heroImg" />
+            </div>
+            <div class="heroStudent">
+                <div class="studentDetails">
+                    <img src="/images/student (1) 1.png" alt="student" class="studentImg" />
+                    <div>
+                        <div class="studentNumber">24k</div>
+                        <div class="totalStudent">Total Students</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
