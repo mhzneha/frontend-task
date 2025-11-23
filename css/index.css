@@ -41,8 +41,8 @@ body,p,a,ul,li{
 }
 
 .top-app .app-icon {
-    background: rgba(58, 181, 74, 1);
-    color: rgba(255, 255, 255, 1);
+    background: var(--primary-green);
+    color: var(--white);
     width: 30px;
     height: 30px;
     display: flex;
@@ -170,6 +170,7 @@ body,p,a,ul,li{
     display: flex;
     gap: 16px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 /* Enroll Students */
@@ -180,7 +181,7 @@ body,p,a,ul,li{
 }
 
 .num{
-    color:rgba(58, 181, 74, 1);
+    color:var(--primary-green);
     font-size: 24px;
     line-height: 18px;
     font-weight: 700;
@@ -250,8 +251,10 @@ body,p,a,ul,li{
 /* Student floating card */
 .student-detail{
     display: flex;
-    align-items: start;
+    flex-direction: column;
+    align-items: end;
     position: relative;
+    justify-content: space-between;
 }
 .student-card {
     display: flex;
@@ -267,6 +270,17 @@ body,p,a,ul,li{
     border-radius: 50%;
 }
 
+.hero-next{
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    position: relative;
+    justify-content: end;
+    text-align: end;
+}
+
 /*COURSES*/
 #courses{
     background-color:rgba(241, 245, 249, 1) ;
@@ -275,7 +289,7 @@ body,p,a,ul,li{
 }
 
 .course-detail{
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--white);
     padding: 80px;
 }
 .title{
@@ -370,10 +384,12 @@ body,p,a,ul,li{
     display: flex;
     justify-content: space-between;
 }
-.card-logo svg{
-    background-color: rgba(255, 255, 255, 1);
+.card-logo {
+    background-color: var(--white);
     border-radius: 50%;
     padding: 10px;
+    width: 40px;
+    height: 40px;
 }
 .aboutUs-card{
     display: flex;
@@ -396,12 +412,15 @@ body,p,a,ul,li{
     font-size:16px ;
     line-height: 18px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 1);
+    color: var(--white);
     border-radius: 6px;
     background-color: transparent;
     border: 2px solid rgba(198, 173, 46, 1);
     padding: 10px 16px;
     margin-top: 30px;
+}
+.learn-more:hover{
+    background-color: rgba(198, 173, 46, 1) ;
 }
 
 /*Free Material*/
@@ -456,7 +475,7 @@ body,p,a,ul,li{
 }
 
 .testimonial-detail{
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--white);
     padding: 80px;
     position: relative;
     min-height: 600px;
@@ -524,6 +543,58 @@ body,p,a,ul,li{
     line-height: 25px;
     font-weight: 400;
     color: rgba(71, 85, 105, 1);
+}
+
+.navigation-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    position: relative;
+    justify-content: end;
+}
+
+.dots-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(198, 128, 46, 1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color:rgba(198, 128, 46, 1);
+    width: 35px;
+    border-radius: 6px;
+}
+
+.next-btn {
+    background: none;
+    border: none;
+    color: rgba(198, 128, 46, 1);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+}
+
+.next-btn:hover {
+    transform: translateX(5px);
+}
+
+.next-btn i {
+    font-size: 14px;
 }
 
 /*QUESTIONS*/
@@ -656,7 +727,9 @@ body,p,a,ul,li{
     display: flex;
     padding: 5px 20px;
     align-items: center;
+    justify-content: center;
     gap: 20px;
+    max-width: 310px;
 }
 
 .app-detail{
@@ -760,7 +833,15 @@ body,p,a,ul,li{
     color: rgba(0, 0, 0, 1);
     margin-left: 10px;
 }
-
+.read-more:hover{
+    background-color:var(--primary-green) ;
+    padding: 10px;
+    border-radius: 10px;
+}
+.read-more:hover span,
+.read-more:hover i {
+    color: rgba(252, 251, 251, 1); 
+}
 /*FOOTER*/
 .footer{
     background-color: rgba(252, 251, 251, 1);
@@ -816,8 +897,8 @@ body,p,a,ul,li{
     transform: translateY(-50%);
     font-size: 14px;
     cursor: pointer;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(58, 181, 74, 1);
+    color: var(--white);
+    background-color: var(--primary-green);
     padding: 8px;
     border-radius: 50%;
 }
@@ -857,15 +938,14 @@ body,p,a,ul,li{
    .mobile-nav-links{
     margin-block: 20px;
    }
-   
    .mobile-nav-links li a{
-    color: #7c7979;
+        color: #7c7979;
    }
     #hero{
         width: 100%;
         min-height: 0px;
-    padding-inline: 20px;
-    margin-top: 90px;
+        padding-inline: 20px;
+        margin-top: 90px;
     }
     .hero-img,.small-ellipse,.big-ellipse{
         display: none;
@@ -906,8 +986,10 @@ body,p,a,ul,li{
 
 /*MOBILE SCREEN*/
 @media(max-width:600px){
-        .navbar {
+    .navbar {
         padding: 10px;}
+        .title{
+        font-size: 20px;}
     .hero-content{
         flex-direction: column;
         gap:20px;
@@ -918,12 +1000,15 @@ body,p,a,ul,li{
         gap: 20px;
         align-items: start;
     }
+    .hero-title .title {
+        font-size: 28px;
+    }
     #courses{
-    background-color: rgba(255, 255, 255, 1);
+        background-color: var(--white);
     }
     .course-detail {
-    padding: 20px;
-}
+        padding: 20px;
+    }
     #aboutUs {
         background: linear-gradient(
             to right,
@@ -935,35 +1020,41 @@ body,p,a,ul,li{
     .aboutUs-detail .card-container{
         display: none;
     }
+    .aboutUs-detail .title{
+        font-size: 25px;
+    }
     .material-card {
-    max-width: 100%;
-padding: 10px;
-flex-direction: column;}
-  .download-app {
-   flex-direction: column;
-    margin-top: 10px;
-    gap: 20px;
-}
-.download-detail {
-    margin-left: 0px;
-}
-.app-title{
-    font-size: 20px;
-}
-.download-icon {
-    font-size: 20px;   
-}
-.about-site{
-    display: none;
-}
+        max-width: 100%;
+        padding: 10px;
+        flex-direction: column;}
+    .download-app {
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 20px;
+    }
+    .download-title{
+       font-size: 25px;}
+    .download-detail {
+        margin-left: 0px;
+    }
+    .app-title{
+        font-size: 20px;
+    }
+    .download-icon {
+        font-size: 20px;   
+    }
+    .about-site{
+        display: none;
+    }
     #material, #testimonial, #question, #download, #blog, .footer, .footer-bottom {
         padding: 8px;
         margin-top: 10px;
     }
-  .blog-card{
-    width: 100vh;
-    min-height: auto;}  
+    .blog-card{
+        width: 100vh;
+        min-height: auto;
+    }  
     .footer-privacy {
-    gap: 10px;
-}
+        gap: 10px;
+    }
 }
